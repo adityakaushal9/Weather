@@ -12,7 +12,9 @@ const API_URL = import.meta.env.VITE_API_URL;
 
 
   let getWeatherInfo = async () => {
-    let responce = await fetch(`${API_URL}?q=${city}&appid=${API_KEY}&units=metric`);
+      let responce = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=98dd37fcfd697edccc1da793a29eba70&units=metric`);
+    
+    // let responce = await fetch(`${API_URL}?q=${city}&appid=${API_KEY}&units=metric`);
     let jsonresponce = await responce.json();
     let result = {
       city: jsonresponce.name,
