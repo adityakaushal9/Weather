@@ -2,7 +2,7 @@ import { useState } from 'react'
 import VantaBackground from "./VantaBG.jsx";
 import './App.css'
 import SearchBox from './searchBox.jsx'
-// import InfoBox from './InfoBox.jsx'
+import "./infoBox.css";
 import WeatherApp from './WeatherApp.jsx'
 
 
